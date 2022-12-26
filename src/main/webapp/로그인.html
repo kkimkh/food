@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>로그인 폼</h3>
+<hr>
+<!-- <form name="fo" method="get">
+사용자 ID : <input type="text" size="15" value=""><br>
+비밀 번호 : <input type="password" size="15" value="">
+           <input type="submit" value="완료"> -->
+           <c:when test="${userInfo eq null}">
+			<form action="login.do" method="post">
+				아이디 : <input type="text" name="id"><br />
+				비밀번호 : <input type="password" name="pw"><br />
+				<input type="submit" value="로그인">
+			</form>
+			<a href="Member/memberRegister.do">회원가입</a><br/>		
+		</c:when>
+</form>
+</body>
+</html>
